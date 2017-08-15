@@ -3,11 +3,14 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: mitkey 的博客
-subtitle: 羊肠小道是非多
-description: mitkey
+title: Freedom's Notes
+subtitle: 上善若水，不进则退
+description: 编码记录，生活点滴
 author: mitkey
-language:
+# default
+#language: zh-CN
+# next theme 
+language: zh-Hans
 timezone:
 
 # URL
@@ -72,7 +75,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: next
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
