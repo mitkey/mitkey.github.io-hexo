@@ -1,13 +1,13 @@
 ---
 title: Hexo 中 Markdown 使用小方法
 tags:
-  - Dev
-  - Life
+  - Hexo
 categories:
   - Diary
 comments: false
 date: 2017-08-15 21:41:34
 updated: 2017-08-15 21:41:34
+password:
 ---
 
 关于 Hexo 中 Markdown 使用的小方法，有些语法 Markdown 自带的也支持。请自行测试
