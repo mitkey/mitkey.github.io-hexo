@@ -1,11 +1,14 @@
 <script>
 	(function(){
-		if('{{ page.password }}'){
-			if (window.name == "" && prompt('请输入文章密码') !== '{{ page.password }}'){
-				alert('密码错误！');
-				history.back();
+		if ('{{ page.password }}'){
+			if (window.name == ""){
+				if (prompt('请输入文章密码') !== '{{ page.password }}'){
+					alert('密码错误！');
+					history.back();
+				} else{
+					window.name = "test"; 
+				}
 			}
-			window.name = "test"; 
 		}
 	})();
 </script>
