@@ -313,6 +313,18 @@
     {#####################}
     {### END POST BODY ###}
     {#####################}
+	
+	{#################}
+    {### POST BODY END TAG ###}
+    {#################}
+	<div>
+	  {% if not is_index %}
+		{% include 'passage-end-tag.swig' %}
+	  {% endif %}
+	</div>
+	{#################}
+    {### END POST BODY END TAG ###}
+    {#################}
 
     {% if theme.wechat_subscriber.enabled and not is_index %}
       <div>
