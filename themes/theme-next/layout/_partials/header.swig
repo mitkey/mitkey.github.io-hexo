@@ -1,18 +1,3 @@
-<script>
-	(function(){
-		if ('{{ page.password }}'){
-			if (window.name == ""){
-				if (prompt('请输入文章密码') !== '{{ page.password }}'){
-					alert('密码错误！');
-					history.back();
-				} else{
-					window.name = "test"; 
-				}
-			}
-		}
-	})();
-</script>
-
 <div class="site-brand-wrapper">
   <div class="site-meta {% if theme.custom_logo.enabled %}custom-logo{% endif %}">
     {% if theme.custom_logo.image and theme.scheme === 'Muse' %}
