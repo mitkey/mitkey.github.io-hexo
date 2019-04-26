@@ -29,3 +29,39 @@
 ## next 主题添加文章摘录 ##
 
 	在需要摘录截止下一行加上 <!-- more -->
+	
+## 部署到个人服务器 ##
+	/usr/local/nginx
+		client_body_temp
+		conf
+		fastcgi_temp
+		html
+		logs
+		proxy_temp
+		sbin
+		scgi_temp
+		uwsgi_temp
+		
+	安装 nginx，在安装目录下的 html 中，上传 public.zip 压缩包。解压出来.
+	修改 nginx.conf (conf/nginx.confg)
+
+		server {
+			listen       80;
+			server_name  localhost;
+
+			location / {
+				# root html;
+				
+				# 修改的这行
+				root   html/public;
+				index  index.html index.htm;
+			}
+		}
+
+
+## 不渲染 html ##
+	https://blog.csdn.net/ganzhilin520/article/details/79057774
+	在不想被渲染的 html 文件最上面添加如下代码
+		---
+		layout: false
+		---
